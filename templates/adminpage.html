@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body class="loggedin">
+		<nav class="navtop">
+			<div>
+				<h1>Website Title</h1>
+				<a href="{{ url_for('Index') }}"><i class="fas fa-sign-out-alt"></i>List Users</a>
+				<a href="{{ url_for('adminlogout') }}"><i class="fas fa-sign-out-alt"></i>AdminLogout</a>
+
+			</div>
+		</nav>
+
+		<div class="content">
+			
+			{% block content %}{% endblock %}
+			<h2>Home Page</h2>
+			<p>Welcome back, Admin</p>
+		</div>
+	</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

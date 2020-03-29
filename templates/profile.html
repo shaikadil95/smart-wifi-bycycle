@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile Page</h2>
+<div>
+    <p>Your account details are below:</p>
+    <table>
+        <tr>
+            <td>Username:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+	<tr>
+            <td>Available Internet Time(min):</td>
+            <td>{{ account['timeavailable'] }}</td>
+        </tr>
+
+
+    </table>
+</div>
+<br>
+
+<div>
+<p>Redeem Internet Time:</p>
+<form action="{{ url_for('timereqest')}}" method="post">
+    <input type="number" name="timerequest">
+    <input type="submit" value="Redeem in min">
+</form>
+</div>
+{% endblock %}
