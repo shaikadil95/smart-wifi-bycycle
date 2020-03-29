@@ -17,5 +17,6 @@ Ability to control the resistance with software and Raspberry Pi computer instea
 ![alt text](https://raw.githubusercontent.com/shaikadil95/smart-wifi-bycycle/master/images/af44995d26d8f4314d6f0ccb3646393f_original.jpg)
 
 The architecture of the code that was tested running on a Raspberry Pi B+:
+
 ![alt text](https://raw.githubusercontent.com/shaikadil95/smart-wifi-bycycle/master/images/1edcf01422efabc49ca4a2c205b03fd4_original.png)
 
